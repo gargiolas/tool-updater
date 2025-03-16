@@ -48,9 +48,7 @@ jobs:
      - name: Pack NuGet package
        run: dotnet pack --configuration Release --no-build --output ./nupkg
 
-     - name: Publish NuGet package
-       uses: NuGet/actions/nuget-publish@v1
-       with:
-          api-key: ${{ secrets.NUGET_API_KEY }}  # La chiave API di NuGet viene memorizzata nelle secrets
-          nuget-package: ./nupkg/*.nupkg
-          nuget-source: https://api.nuget.org/v3/index.json  # URL di NuGet
+     - name: Push to NuGet
+       env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+       run: dotnet nuget push ./nupkg/*.nupkg -k $NUGET_API_KEY -s https://www.nuget.org/api/v2/package
