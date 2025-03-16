@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute(("About\r\nA tool to check for updates to installed Global CLIs and update them if ne" +
     "cessary"))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bf106fcadc32f226fb05f2757c526daa316463f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6b977e69aa08ad79486b66ec575063305f6baa5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToolUpdater")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToolUpdater")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

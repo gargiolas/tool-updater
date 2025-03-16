@@ -8,7 +8,7 @@
     <projectUrl>https://github.com/gargiolas/tool-updater</projectUrl>
     <description>About
 A tool to check for updates to installed Global CLIs and update them if necessary</description>
-    <repository type="GitHub" commit="3bf106fcadc32f226fb05f2757c526daa316463f" />
+    <repository type="GitHub" commit="b6b977e69aa08ad79486b66ec575063305f6baa5" />
     <dependencies>
       <group targetFramework="net9.0">
         <dependency id="Microsoft.Extensions.Configuration.Binder" version="9.0.3" exclude="Build,Analyzers" />
