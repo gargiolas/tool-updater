@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6CA92F4B-D214-4235-B8DB-61E6223753E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolUpdater", "src\ToolUpdater\ToolUpdater.csproj", "{B0280B69-42B4-42F2-949F-32F8ECC7B7BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{476F4D48-1751-4B41-A36E-F7332FBE4764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolUpdaterUnitTest", "test\ToolUpdaterUnitTest\ToolUpdaterUnitTest.csproj", "{AA44E505-4D64-4ED6-A097-093E8EA97110}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0280B69-42B4-42F2-949F-32F8ECC7B7BF} = {6CA92F4B-D214-4235-B8DB-61E6223753E2}
+		{AA44E505-4D64-4ED6-A097-093E8EA97110} = {476F4D48-1751-4B41-A36E-F7332FBE4764}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0280B69-42B4-42F2-949F-32F8ECC7B7BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0280B69-42B4-42F2-949F-32F8ECC7B7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0280B69-42B4-42F2-949F-32F8ECC7B7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0280B69-42B4-42F2-949F-32F8ECC7B7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA44E505-4D64-4ED6-A097-093E8EA97110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA44E505-4D64-4ED6-A097-093E8EA97110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA44E505-4D64-4ED6-A097-093E8EA97110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA44E505-4D64-4ED6-A097-093E8EA97110}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
