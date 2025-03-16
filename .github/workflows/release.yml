@@ -15,22 +15,41 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
-    steps:
-    - uses: actions/checkout@v4
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 9.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: List bin directory contents
-      run: ls -R ./src/ToolUpdater/bin
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-    - name: Pack nugets
-      run: dotnet pack -c Release --no-build --output ./artifacts
-    - name: Push to NuGet
-      run: dotnet nuget push "./artifacts/*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
+    Steps:
+     # 1. Effettua il checkout del codice sorgente
+     - name: Checkout repository
+       uses: actions/checkout@v4
 
+     # 2. Configura la versione di .NET
+     - name: Setup .NET
+       uses: actions/setup-dotnet@v4
+       with:
+         dotnet-version: 9.0.x
+
+     # 3. Ripristina le dipendenze
+     - name: Restore dependencies
+       run: dotnet restore
+
+     # 4. Compila il progetto
+     - name: Build
+       run: dotnet build -c $BUILD_CONFIG --no-restore
+
+     # 5. Lista i file generati per il debug
+     - name: Debug Build Output
+       run: ls -R ./src
+
+     # 6. Esegui i test
+     - name: Test
+       run: dotnet test -c $BUILD_CONFIG --no-build --verbosity normal
+
+     # 7. Crea il pacchetto NuGet nella directory `bin/Release`
+     - name: Pack nugets
+       run: dotnet pack ./src/ToolUpdater/ToolUpdater.csproj -c $BUILD_CONFIG --no-build --output ./src/ToolUpdater/bin/$BUILD_CONFIG
+
+     # 8. Lista i file generati per il debug (opzionale, ma utile)
+     - name: Debug NuGet Package Output
+       run: ls ./src/ToolUpdater/bin/$BUILD_CONFIG
+
+     # 9. Pubblica su NuGet
+     - name: Push to NuGet
+       run: dotnet nuget push "./src/ToolUpdater/bin/$BUILD_CONFIG/*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
