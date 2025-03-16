@@ -53,5 +53,11 @@ jobs:
        run: ls ./src/ToolUpdater/bin/$BUILD_CONFIG
 
      # 9. Pubblica su NuGet
+     #- name: Push to NuGet
+     #  run: dotnet nuget push "./src/ToolUpdater/bin/$BUILD_CONFIG/*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
+
+
      - name: Push to NuGet
-       run: dotnet nuget push "./src/ToolUpdater/bin/$BUILD_CONFIG/*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
+       env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+       run: dotnet nuget push "./src/ToolUpdater/bin/$BUILD_CONFIG/*.nupkg" -k $NUGET_API_KEY -s https://www.nuget.org/api/v2/package
