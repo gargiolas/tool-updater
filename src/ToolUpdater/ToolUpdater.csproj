@@ -5,6 +5,13 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>ToolUpdater</Title>
+        <Authors>Giuseppe Argiolas</Authors>
+        <Description>About
+A tool to check for updates to installed Global CLIs and update them if necessary</Description>
+        <PackageProjectUrl>https://github.com/gargiolas/tool-updater</PackageProjectUrl>
+        <RepositoryType>GitHub</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>

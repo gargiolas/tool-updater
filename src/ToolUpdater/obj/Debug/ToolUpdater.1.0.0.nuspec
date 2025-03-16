@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ToolUpdater</id>
+    <version>1.0.0</version>
+    <title>ToolUpdater</title>
+    <authors>Giuseppe Argiolas</authors>
+    <projectUrl>https://github.com/gargiolas/tool-updater</projectUrl>
+    <description>About
+A tool to check for updates to installed Global CLIs and update them if necessary</description>
+    <repository type="GitHub" commit="3bf106fcadc32f226fb05f2757c526daa316463f" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="9.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="9.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting" version="9.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Lavoro\GitHub\public-repos\tool-updater\src\ToolUpdater\bin\Debug\net9.0\ToolUpdater.runtimeconfig.json" target="lib\net9.0\ToolUpdater.runtimeconfig.json" />
+    <file src="C:\Lavoro\GitHub\public-repos\tool-updater\src\ToolUpdater\bin\Debug\net9.0\ToolUpdater.dll" target="lib\net9.0\ToolUpdater.dll" />
+  </files>
+</package>

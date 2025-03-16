@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToolUpdaterUnitTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0f748163b60b74c6653e47bf8d4b6e7b9086552")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bf106fcadc32f226fb05f2757c526daa316463f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToolUpdaterUnitTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToolUpdaterUnitTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

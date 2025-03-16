@@ -10,10 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ToolUpdater")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Giuseppe Argiolas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute(("About\r\nA tool to check for updates to installed Global CLIs and update them if ne" +
+    "cessary"))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0f748163b60b74c6653e47bf8d4b6e7b9086552")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bf106fcadc32f226fb05f2757c526daa316463f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToolUpdater")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToolUpdater")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
