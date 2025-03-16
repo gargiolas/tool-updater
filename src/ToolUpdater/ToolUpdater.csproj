@@ -5,14 +5,17 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PackAsTool>true</PackAsTool>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IsPackable>true</IsPackable>
         <Title>ToolUpdater</Title>
         <Authors>Giuseppe Argiolas</Authors>
         <Description>About
 A tool to check for updates to installed Global CLIs and update them if necessary</Description>
         <PackageProjectUrl>https://github.com/gargiolas/tool-updater</PackageProjectUrl>
         <RepositoryType>GitHub</RepositoryType>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
+        <PackageTags>Centralised, Package, Management</PackageTags>
     </PropertyGroup>
     
     <ItemGroup>
