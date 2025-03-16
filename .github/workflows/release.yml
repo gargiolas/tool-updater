@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
-    Steps:
+    steps:
      # 1. Effettua il checkout del codice sorgente
      - name: Checkout repository
        uses: actions/checkout@v4
